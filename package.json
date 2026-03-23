@@ -1,0 +1,47 @@
+{
+  "name": "@zakkster/lite-ease",
+  "version": "1.0.0",
+  "description": "30 Penner easing functions as pure (t)=>t. Tree-shakeable, zero-dependency, composable with any lerp.",
+  "author": "Zahary Shinikchiev <shinikchiev@yahoo.com>",
+  "license": "MIT",
+  "type": "module",
+  "main": "LiteEase.js",
+  "types": "LiteEase.d.ts",
+  "exports": {
+    ".": {
+      "import": "./LiteEase.js",
+      "types": "./LiteEase.d.ts"
+    }
+  },
+  "files": [
+    "LiteEase.js",
+    "LiteEase.d.ts",
+    "llms.txt"
+  ],
+  "keywords": [
+    "easing",
+    "penner",
+    "animation",
+    "tween",
+    "bounce",
+    "elastic",
+    "back",
+    "expo"
+  ],
+  "sideEffects": false,
+  "homepage": "https://github.com/PeshoVurtoleta/lite-ease#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeshoVurtoleta/lite-ease.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PeshoVurtoleta/lite-ease/issues",
+    "email": "shinikchiev@yahoo.com"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  },
+  "scripts": {
+    "test": "vitest run"
+  }
+}

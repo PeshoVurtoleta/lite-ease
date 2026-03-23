@@ -1,0 +1,24 @@
+# @zakkster/lite-ease
+> 30 Penner easing functions as pure (t)=>t. Zero dependencies. Tree-shakeable.
+
+## Install
+npm i @zakkster/lite-ease
+
+## Import
+import { easeOutBounce, easeInOutElastic, clamp01, reverse } from '@zakkster/lite-ease';
+
+## Key Facts
+- 31 functions: 10 families × 3 variants (In/Out/InOut) + linear
+- Every function: (t: number) => number, t ∈ [0, 1]
+- Composable: lerp(a, b, easeOutBounce(t))
+- clamp01(t) clamps overshoot from Back/Elastic
+- reverse(ease) creates the inverse curve
+- easings map for string-based lookup
+- Zero dependencies, pure math, no allocation
+
+## Families
+Sine, Quad, Cubic, Quart, Quint, Expo, Circ, Back, Elastic, Bounce
+
+## Overshoot Warning
+easeOutBack and easeOutElastic return values > 1.0 at certain t values.
+Use clamp01() wrapper if you need strict [0,1] output.
